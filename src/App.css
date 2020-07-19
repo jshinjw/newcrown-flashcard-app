@@ -1,0 +1,51 @@
+.body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 900px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  position: relative;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.2);
+  display: flex;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: #999;
+  height: 250px;
+  width: 500px;
+  transition: 150ms;
+  transform: perspective(1000px) rotateY(1deg);
+  transform-style: preserve-3d;
+}
+
+.card.flip {
+  transform: rotateY(179deg);
+}
+
+.front {
+  position: absolute;
+  padding: 2rem;
+  backface-visibility: hidden;
+}
+
+.back {
+  position: absolute;
+  padding: 2rem;
+  backface-visibility: hidden;
+  transform: rotateY(180deg);
+}
+
+.card-content {
+  font-size: 1.4rem;
+}
