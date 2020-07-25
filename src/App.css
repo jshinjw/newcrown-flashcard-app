@@ -131,7 +131,8 @@
   }
 
   .container {
-    height: 100vh;
+    /* min-height: -webkit-fill-available; */
+    height: 100%;
     justify-content: flex-start;
   }
 
