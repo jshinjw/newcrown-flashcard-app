@@ -5,6 +5,11 @@
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+html {
+  height: 100%;
+  min-height: -webkit-fill-available;
+}
+
 .nav {
   background: lightskyblue;
   color: #222;
@@ -39,6 +44,7 @@
 }
 
 .container {
+  height: 100%;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -131,7 +137,6 @@
   }
 
   .container {
-    /* min-height: -webkit-fill-available; */
     height: 100%;
     justify-content: flex-start;
   }
