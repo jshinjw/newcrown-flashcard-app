@@ -10,7 +10,7 @@ const Buttons = ({ setCard, setRand }) => {
   };
 
   return (
-    <div>
+    <div className='button-wrapper'>
       <button className='button' onClick={() => handleOnClickRand()}>
         Random
       </button>

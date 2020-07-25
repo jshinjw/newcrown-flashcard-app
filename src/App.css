@@ -31,7 +31,7 @@
 
 .nav-item a:hover {
   opacity: 0.8;
-  border-bottom: 1px solid navy;
+  border-bottom: 3px solid navy;
 }
 
 .hide {
@@ -39,7 +39,6 @@
 }
 
 .container {
-  /* max-width: 900px; */
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -53,9 +52,9 @@
 }
 
 .nc {
-  display: flex;
   flex-direction: column;
   align-items: center;
+  align-content: center;
   justify-content: center;
   text-align: center;
 }
@@ -99,6 +98,14 @@
   transform: rotateY(180deg);
 }
 
+.button-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
 .button {
   display: inline-block;
   background: lightgrey;
@@ -114,4 +121,42 @@
 
 .button:hover {
   background-color: grey;
+}
+
+@media only screen and (max-device-width: 600px) {
+  .nav .nav-items .nav-item {
+    font-size: 2.5rem;
+    padding: 1rem;
+    margin: 0 auto;
+  }
+
+  .container {
+    height: 100vh;
+    justify-content: flex-start;
+  }
+
+  .container h3 {
+    font-size: 4rem;
+    padding-top: 3rem;
+    padding-bottom: 0;
+    margin-bottom: 0;
+  }
+
+  .card {
+    font-size: 3.5rem;
+    width: 700px;
+    height: 500px;
+    margin: 3rem auto 5rem auto;
+  }
+
+  .button-wrapper {
+    justify-content: space-evenly;
+  }
+
+  .button {
+    font-size: 2.5rem;
+    width: 320px;
+    height: 150px;
+    margin: 1rem 2rem;
+  }
 }
